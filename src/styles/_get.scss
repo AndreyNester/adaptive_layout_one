@@ -1,0 +1,56 @@
+.get {
+  .get__container {
+    .get__text {
+      font-size: 14px;
+      margin-bottom: 16px;
+      line-height: 20px;
+    }
+    .get__link {
+      font-size: 16px;
+      color: $default-text-color;
+      line-height: 24px;
+      font-weight: 500;
+      transition-duration: 0.1s;
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      &> *{
+        display: inline;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (min-width: 767.98px) {
+  .get {
+    .get__container {
+      max-width: 800px;
+      .get__text {
+        width: 60%;
+      }
+      .get__link {
+        &> *{
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1023.98px) {
+  .get {
+    .get__container {
+      max-width: 1056px;
+      .get__text {
+        width: 40%;
+      }
+      .get__link {
+      }
+    }
+  }
+}
+
+

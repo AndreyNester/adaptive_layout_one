@@ -1,0 +1,11 @@
+body{
+  font-family: TT Lakes;
+  font-weight: normal;
+  background-color: $body-color;
+  color: $default-text-color;
+
+}
+[class*='__container']{
+  padding: 0 16px;
+  margin: 0 auto;
+}

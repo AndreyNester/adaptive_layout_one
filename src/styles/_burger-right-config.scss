@@ -1,0 +1,110 @@
+.burger-right-wrapper {
+  position: absolute;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  z-index: -3;
+  opacity: 0;
+  transition-property: z-index, opacity;
+  transition-delay: 0.2s, 0.2s;
+
+  &.burger-right-wrapper_mes-opened{
+    opacity: 1;
+    transition-property: z-index;
+    transition-delay: 0s;
+    z-index: 3;
+
+    &>.burger-right-message{
+      transform: translateX(-100%);
+      box-shadow: -16px 0 20px 0 #b7b7b7;
+      min-height: 750px;
+      height: inherit;
+      z-index: 2;
+    }
+  }
+  
+  &.burger-right-wrapper_phone-opened{
+    opacity: 1;
+    transition-property: z-index;
+    transition-delay: 0s;
+    z-index: 3;
+
+    &>.burger-right-phone{
+      transform: translateX(0);
+      box-shadow: -16px 0 20px 0 #b7b7b7;
+      min-height: 750px;
+      height: inherit;
+    }
+    
+  }
+    //-------message----------
+  .burger-right-message{
+    position: absolute;
+    right: -100vw;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    background-color: #FFFFFF;
+    transition-property: transform;
+    transition-duration: 0.2s;
+
+    .burger-right-message__button-close {
+    }
+  }
+
+
+    //-----------phone-----------
+  .burger-right-phone {
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: inherit;
+    background-color: #ffffff;
+    transition-property: transform; 
+    transition-duration: 0.2s;
+
+    .burger-right-phone__button-close {
+    }
+  }
+}
+
+@media (min-width: 767.98px) {
+  .burger-right-wrapper {
+    .burger-right-message{
+      width: 440px;
+      right: -440px;
+      transform: translateX(0);
+      .burger-right-message__button-close {
+      }
+    }
+
+
+    &.burger-right-wrapper_mes-opened{
+
+      &>.burger-right-message{
+        transform: translateX(-100%);
+      }
+    }
+
+    .burger-right-phone{
+      width: 440px;
+      right: -440px;
+      transform: translateX(0);
+      .burger-right-phone__button-close {
+      }
+    }
+    &.burger-right-wrapper_phone-opened{
+
+      &>.burger-right-phone{
+        transform: translateX(-100%);
+      }
+    }
+
+  }
+}
+
+
+
+

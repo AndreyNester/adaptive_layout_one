@@ -1,0 +1,29 @@
+//------сброс настроек. Начальная конфигурация-------
+
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixinsAndBlocks';
+@import 'bodyConfig';
+@import 'wrapperLayout';
+
+//------стилизация блоков (section'ов)-------
+
+@import url("https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css");
+@import 'header';
+@import 'serve';
+@import 'brands';
+@import 'fix';
+@import 'price';
+@import 'get';
+@import 'footer';
+
+//------конфигурации бургеров (-config). Верстка внутреннего содержимого-------
+
+@import 'burger-left-config';
+@import 'burger-right-config';
+@import 'burger-left-menu';
+@import 'burger-right-block';
+@import 'burger-right-phone';
+
+

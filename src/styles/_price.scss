@@ -1,0 +1,196 @@
+.price {
+  .price__header {
+    .price__container {
+      .price__title {
+      }
+    }
+  }
+  .price__main {
+    .price__container{
+      .price__swiper {
+        width: 550px;
+        height: 240px;
+
+        .price__list {
+          
+          .price__item {
+            position: relative;
+            padding: 16px;
+            height: 200px;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .price__content-item{
+
+              .price__subtitle{
+                font-weight: 500;
+                font-size: 14px;
+                color: $secondary-text-color;
+              }
+              .price__text{
+                font-size: 14px;
+                line-height: 1.28
+              }
+            }
+            .price__button {
+              position: absolute;
+              bottom: 16px;
+              right: 16px;
+              width: 119px;
+              height: 32px;
+              border-radius: 16px;
+              background-color: $accent-color;
+              color: white;
+              font-size: 12px;
+              font-weight: bold; 
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+
+              &> * {
+                display: inline-block;
+                vertical-align: middle;
+
+                &:first-child{
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+          .price__item-fake {
+          }
+        }
+        .price__pagination {
+        }
+      }
+      .price__button-show {
+      }
+
+      .price__table{
+        display: none;
+        position: relative;
+        background-color: #FFFFFF;
+        width: calc(100% - 32px);
+        margin: 0 auto;
+        margin-bottom: 50px;
+        height: 321px;
+        border-collapse: collapse;
+        overflow: visible;
+        font-size: 14px;
+
+        
+
+
+        &::before{
+          content: '';
+          position: absolute;
+          z-index: 0;
+          width: calc(100% + 32px);
+          height: 276px;
+          background-color: #EAEAEA;
+          top: 0;
+          left: 0;
+          transform: translate(-16px, 44px);
+          border-left: 18px solid white;
+          border-right: 18px solid white;
+          border-radius: 6px;
+        }
+
+        thead{
+       
+         background-color: $body-color;
+          height: 43px;
+          z-index: 2;
+
+          tr{
+            th{
+              text-align: start;
+              font-weight: 500;
+              color: $secondary-text-color;
+            }
+          }
+        }
+
+        tbody{
+          z-index: 2;
+          position: relative;
+
+
+
+          tr{
+            z-index: 2;
+            border-bottom: 1px solid #ff0c0c;
+            background-color: #FFFFFF;
+            border-spacing: 10px;
+            transition-duration:0.1s;
+
+            &:last-child{
+              border-bottom: none;
+            }
+            &:hover{
+              background-color: bisque;
+            }
+            td{
+              z-index: 2;
+              
+              &:last-child{
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                align-items: center;
+                align-content: center;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 767.98px) {
+  .price {
+    .price__header {
+      .price__container {
+
+        .price__title {
+        }
+      }
+    }
+    .price__main {
+      .price__container{
+        overflow: visible;
+
+        .price__swiper {
+          display: none;
+          .price__list {
+            .price__item {
+              .price__content-item{
+                .price__subtitle{
+                }
+                .price__text{
+                }
+              }
+              .price__button {
+                &> * {
+                  &:first-child{
+                  }
+                }
+              }
+            }
+            .price__item-fake {
+            }
+          }
+          .price__pagination {
+          }
+        }
+        .price__button-show {
+        }
+        .price__table{
+          display: table;
+        }
+      }
+    }
+  }
+}

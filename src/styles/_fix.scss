@@ -1,0 +1,106 @@
+.fix {
+  .fix__header {
+    .fix__container {
+      .fix__title {
+      }
+    }
+  }
+  .fix__main {
+    .fix__container{
+      .fix__swiper {
+        height: 196px;
+        .fix__list {
+          .fix__item {
+            height: 160px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 16px;
+            font-weight: 500;
+            font-size: 16px;
+
+            .fix__button {
+              @include basic-btn-template;
+              align-self: flex-end;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              background-color: #FFFFFF;
+              border: 2px solid $accent-color;
+            }
+          }
+          .fix__item-fake {
+          }
+        }
+        .fix__pagination {
+        }
+      }
+      .fix__button-show {
+        &.fix__button_hiden{
+          img{
+            transform: rotate(180deg);
+          }
+          
+        }
+      }
+    }
+  }
+}
+@media (min-width: 767.98px) {
+  .fix {
+    .fix__header {
+      .fix__container {
+        .fix__title {
+        }
+      }
+    }
+    .fix__main {
+      .fix__container{
+        .fix__swiper {
+          height: auto;
+          .fix__list {
+            .fix__item {
+              .fix__button {
+              }
+            }
+            .fix__item-fake {
+            }
+          }
+          .fix__pagination {
+          }
+        }
+        .fix__button-show {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1023.98px) {
+  .fix {
+    .fix__header {
+      .fix__container {
+        .fix__title {
+        }
+      }
+    }
+    .fix__main {
+      .fix__container{
+        .fix__swiper {
+          .fix__list {
+            .fix__item {
+              .fix__button {
+              }
+            }
+            .fix__item-fake {
+            }
+          }
+          .fix__pagination {
+          }
+        }
+        .fix__button-show {
+        }
+      }
+    }
+  }
+}
